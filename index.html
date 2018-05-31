@@ -1,233 +1,652 @@
-<!--muallif:ISKANDARBEK IBROKHIMOV -->
-  <!--sana: 02.12.2017yil -->
-<!--Nusxa ko'chirish taqiqlanadi! -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Billi.uz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="Icon-font-7-stroke-PIXEDEN-v-1.2.0/assets/pe-icon-7-stroke.css">
+</head>
+<!-- Boshlanish-->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+					<!--Navbar-->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+		<div class="navbar navbar-brand"><a href=""><img src="billi.png" style="width: 100%;"></a></div>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#about">Biz haqimizda</a></li>
+	        <li><a href="#services">Yo'nalishlari</a></li>
+	        <li><a href="#teacher">O'qituvchilar</a></li>
+	        <li><a href="#opinion">O'quvchilarning Fikrlari</a></li>
+	        <li><a href="#contact">Bog'lanish</a></li>
+	      </ul>
+	    </div>
+    </div>
+</nav>
+	<!--Navbar End-->
+<!-- Header image-->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6"><center>
+			  <img src="1234.jpg" style="width:90%;"></center>
+		</div>
+		<div class="col-sm-6">
+			<div id="about"><br><br><center>
+					<h2 style="color:#337ab7;"><b>Bizda 4 yoshdan 16 yoshgacha o'quv kurslari mavjud</b></h2>
+						<p id="textt"><b>Farzandingizni to'garaklarga yozdiring va bonus sifatida +INGLIZ TILI kursiga bepul ega bo'ling.</b></p>
+						<!--Button A'loqa-->
+			<h2 style="color: #337ab7"><b>Hoziroq O'qishni Boshlang!</b></h2>
+			  <!-- Trigger the modal with a button -->
+			  <button type="button" class="btn btn-primary btn-lg" id="myBtn">Kursga Yozilish!</button>
+				<div class="modal fade" id="myModal" role="dialog">
+				    <div class="modal-dialog">    
+				      <!-- Modal content-->
+				      <div class="modal-content">
+				        <div class="modal-header">
+				         	<button type="button " class="close" data-dismiss="modal">&times;</button>
+				          	<h4>Kursga Yozilish</h4>
+					        </div>
+					        <div class="modal-body" >
+					          <form role="form" action="form_contact">
+					            <div class="form-group">
+					              <label for="name"><span class="glyphicon glyphicon-user"></span> Ismingiz</label>
+					              <input type="text" class="form-control" id="name" placeholder="Ismingiz kiriting" required>
+					            </div>
+					            <div class="form-group">
+					            	<label for="date">Yoshingiz</label>
+								    <select id="date" name="Yoshi">
+								      <option value="4">4</option>
+								      <option value="5">5</option>
+								      <option value="6">6</option>
+								      <option value="7">7</option>
+								      <option value="8">8</option>
+								      <option value="9">9</option>
+								      <option value="10">10</option>
+								      <option value="11">11</option>
+								      <option value="12">12</option> 
+								      <option value="13">13</option>
+								      <option value="14">14</option>       
+								    </select>
+					            </div>
+					            <div class="form-group">
+								    <label for="phone">Telefon Nomeringiz</label>
+								    <input type="phone" id="phone" name="phone" title="Telefon raqamingiz plus belgisi va o'n bitta raqamdan iborat bo'lishi kerak" required>
+					            </div>
+					              <button type="submit" class="btn btn-success btn-block">Yuborish</button>
+					          </form>
+					        </div>
+				      	</div>
+				    </div>
+				</div> 
+			</div></center>
+		</div>
+	</div>
+</div>
+<!-- Header End-->
 
+					<!-- Biz haqimizda-->
+
+</div><br><br class="container">
+	<div class="container" id="services">
+		<h2 id="kirish" style="text-align: center;color: #2e6da4;"><b> Bizda mavjud o'quv kurslar</b></h2>
+		<div class="row">
+			<div class="col-sm-3">
+				  <center><a data-toggle="modal" href="#myModal">				
+				<div class="modal fade" id="myModal" role="dialog">
+				    <div class="modal-dialog">    
+				      <!-- Modal content-->
+				      <div class="modal-content">
+				        <div class="modal-header">
+				         	<button type="button " class="close" data-dismiss="modal">&times;</button>
+				          	<h4>Kursga Yozilish</h4>
+					        </div>
+					        <div class="modal-body" >
+					          <form role="form" action="form_contact">
+					            <div class="form-group">
+					              <label for="name"><span class="glyphicon glyphicon-user"></span> Ismingiz</label>
+					              <input type="text" class="form-control" id="name" placeholder="Ismingiz kiriting" required>
+					            </div>
+					            <div class="form-group">
+					            	<label for="date">Yoshingiz</label>
+								    <select id="date" name="Yoshi">
+								      <option value="4">4</option>
+								      <option value="5">5</option>
+								      <option value="6">6</option>
+								      <option value="7">7</option>
+								      <option value="8">8</option>
+								      <option value="9">9</option>
+								      <option value="10">10</option>
+								      <option value="11">11</option>
+								      <option value="12">12</option> 
+								      <option value="13">13</option>
+								      <option value="14">14</option>       
+								    </select>
+					            </div>
+					            <div class="form-group">
+								    <label for="phone">Telefon Nomeringiz</label>
+								    <input type="phone" id="phone" name="phone" title="Telefon raqamingiz plus belgisi va o'n bitta raqamdan iborat bo'lishi kerak" required>
+					            </div>
+					              <button type="submit" class="btn btn-success btn-block">Yuborish</button>
+					          </form>
+					        </div>
+				      	</div>
+				    </div>
+				</div>
+				<div class="panel panel-default" style="width:80%;">
+				    <div class="panel-heading"><img class="img-rounded" src="maktab.png" style="width:100%; max-height: 156px;"></div>
+				    <div class="panel-body"><center><b>Maktabgacha Ta'lim</b></center></div>
+				</div></a></center>
+			</div>	
+			<div class="col-sm-3">
+				  <center><a data-toggle="modal" href="#myModal"><div class="panel panel-default" style="width:80%;">
+				    <div class="panel-heading"><img class="img-rounded" src="mental.png" style="width:100%; max-height: 156px;"></div>
+				    <div class="panel-body"><center><b>Mental Arifmetika</b></center></div>
+				  </div></a></center>
+			</div>			
+			<div class="col-sm-3">
+				  <center><a data-toggle="modal" href="#myModal"><div class="panel panel-default" style="width:80%;">
+				    <div class="panel-heading"><img class="img-rounded" src="rus.png" style="width:100%; max-height: 156px;"></div>
+				    <div class="panel-body"><center><b>Rus Tili</b></center></div>
+				  </div></a></center>
+			</div>
+			<div class="col-sm-3">
+				  <center><a data-toggle="modal" href="#myModal"><div class="panel panel-default" style="width:80%;">
+				    <div class="panel-heading"><img class="img-rounded" src="paint.png" style="width:100%; max-height: 156px;"></div>
+				    <div class="panel-body"><center><b>Rasm Chizish</b></center></div>
+				  </div></a></center>
+			</div>				
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				  <center><a data-toggle="modal" href="#myModal"><div class="panel panel-default" style="width:80%;">
+				    <div class="panel-heading"><img class="img-rounded" src="karate.png" style="width:100%; max-height: 156px;"></div>
+				    <div class="panel-body"><center><b>Karate</b></center></div>
+				  </div></a></center>
+			</div>	
+			<div class="col-sm-3">
+				  <center><a data-toggle="modal" href="#myModal"><div class="panel panel-default" style="width:80%;">
+				    <div class="panel-heading"><img class="img-rounded" src="gym.png" style="width:100%; max-height: 156px;"></div>
+				    <div class="panel-body"><center><b>Gimnastika</b></center></div>
+				  </div></a></center>
+			</div>
+			<div class="col-sm-3">
+				  <center><a data-toggle="modal" href="#myModal"><div class="panel panel-default" style="width:80%;">
+				    <div class="panel-heading"><img class="img-rounded" src="eng.png" style="width:100%; max-height: 156px;"></div>
+				    <div class="panel-body"><center><b>Ingliz Tili</b></center></div>
+				  </div></a></center>
+			</div>
+			<div class="col-sm-3">
+				  <center><a data-toggle="modal" href="#myModal"><div class="panel panel-default" style="width:80%;">
+				    <div class="panel-heading"><img class="img-rounded" src="home.png" style="width:100%; max-height: 156px;"></div>
+				    <div class="panel-body"><center><b>Uy vazifasiga Yordam berish</b></center></div>
+				  </div></a></center>
+			</div>				
+		</div>
+	</div>
+
+<div >
+	<div class="container-fluid" id="ttt">
+		<div class="container" id="teacher"><br>
+			<div class="row">
+				<div class="col-sm-6"><img src="babby.png" style="width:100%;"></div>
+					<br><br>
+					<div class="col-sm-6"><h2 style="text-align: center; color: #FF1493">Diqqat Bizda Aksiya!</h2><h2 style="text-align: center; color: #FF1493">Faqatgina Siz Uchun!</h2>
+						<div style="border-style: double;"><h3 style="text-align: center; color: #337ab7">Farzandingiz Qobilyatlimi? -Albatta </h3>
+						<h4 style="text-align: center; color: #337ab7;">4-16 Yoshgacha bolalar uchun oliy ma'lumotli pedagog-psixologdan</h4>
+						<h3 style="text-align: center; color: #FF1493">MUTLAQO BEPUL MASLAHAT!</h3>
+						<h4 style="text-align: center;color:  #337ab7;">200 000 so'mlik maslahatlar 31-iyungacha bepul</h4>
+						<center><button type="button" class="btn btn-primary btn-lg" id="myBtn">BATAFSIL</button></center><br>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</div>
+</div>	
+<br ><br >
+<section class="fun_facts parallax" id="bi">
+        <div class="section_overlay">
+            <div class="container wow bounceInLeft animated" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: bounceInLeft;">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <div class="single_fun_facts">
+                            <i class="pe-7s-pen"></i>
+                            <h2><span class="counter_num">1800</span> <span>+</span></h2>
+                            <p>Jami o'quvchilar soni</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single_fun_facts">
+                            <i class="pe-7s-plus"></i>
+                            <h2><span class="counter_num">600</span> <span>+</span></h2>
+                            <p>Hozirda o'qiyotganlar</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single_fun_facts">
+                            <i class="pe-7s-medal"></i>
+                            <h2><span class="counter_num">30</span> <span>+</span></h2>
+                            <p>Mutahasislar</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single_fun_facts">
+                            <i class="pe-7s-power"></i>
+                            <h2><span class="counter_num">12</span> <span>+</span></h2>
+                            <p>Togarak turlari</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <div class="container"><center>
+    	<div class="row" style="width: 80%;">
+    		<div class="col-sm-12">
+	    		<div class="col-sm-3"><img src="1c.jpg" style="width: 100%;"></div>
+	    		<div class="col-sm-3"><img src="3c.jpg" style="width: 100%;"></div>
+	    		<div class="col-sm-3"><img src="2c.jpg" style="width: 100%;"></div>
+	    		<div class="col-sm-3"><img src="4c.jpg" style="width: 100%;"></div>
+	    	</div>
+    	</div></center>
+    </div><br>
+<section class="goods">
+		<div class="container text-center">
+			<div class="row">				
+				<div class="wrap">			
+
+					<div class="panel-group" id="collapse-group">
+						 <div class="panel panel-default">
+							 <div class="panel-heading">
+							 <h4 class="panel-title">
+							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el1"><p>O'quv markazi faoliyati qonuniy va litsenziya asosida amalga oshiriladi.</p></a>
+							 </h4>
+							 </div>
+							 <div id="el1" class="panel-collapse collapse">
+							 <div class="panel-body">Farzandingiz davlat standartlari asosida tekshirilgan va sinovdan o'tgan yangi metodlar asosida o'qitiladi. Bunda bola zerikmaydi va qiziqadi.</div>
+							 </div>
+						 </div>
+						 
+						 <div class="panel panel-default">
+							 <div class="panel-heading">
+							 <h4 class="panel-title">
+							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el2"><p>O'quv markazning qulay joyda joylashganligi</p></a>
+							 </h4>
+							 </div>
+							 <div id="el2" class="panel-collapse collapse">
+							 <div class="panel-body">Bu farzandingizni bemalol o'quv markazimizga kelib ketishini ta'minlaydi, ortiqcha yo'l kira harajatlarini kamaytiradi"</div>
+							 </div>
+						 </div>
+						 
+						 <div class="panel panel-default">
+							 <div class="panel-heading">
+							 <h4 class="panel-title">
+							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el3"><p>O'quv sharoitlari, honalar va mebel-jihozlar mahsus bolalar uchun mo'ljallangan.</p></a>
+							 </h4>
+							 </div>
+							 <div id="el3" class="panel-collapse collapse">
+							 <div class="panel-body">Farzandingiz mazza qilib zerikmasdan, o'ziga mos va qulay holatlarda o'qiydi</div>
+							 </div>
+						 </div>
+						 <div class="panel panel-default">
+							 <div class="panel-heading">
+							 <h4 class="panel-title">
+							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el4"><p>O'qituvchilar malakali mutahasislar, ularni dars o'tishi doim nazorat ostida.</p></a>
+							 </h4>
+							 </div>
+							 <div id="el4" class="panel-collapse collapse">
+							 <div class="panel-body">Sifatli va qiziqarli o'yinlar asosida dars o'tadi, farzandingizga yaxshi muomalada bo'ladi, qo'pollik qilmaydi.</div>
+							 </div>
+						 </div>	
+						 
+						 <div class="panel panel-default">
+							 <div class="panel-heading">
+							 <h4 class="panel-title">
+							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el5"><p>Biz nafaqat aqliy balki sog'likni ham o'ylaymiz va sport to'garaklarini tashkil qilganmiz.</p></a>
+							 </h4>
+							 </div>
+							 <div id="el5" class="panel-collapse collapse">
+							 <div class="panel-body">Darsga qo'shimcha sport to'garaklariga qatnashib, jismonan sog'lom bo'ladi qaddi qomati chiroyli bo'ladi, oyoq yassiligi bo'lsa yo'qoladi, tana a'zolari tekkis rivojlanadi.</div>
+							 </div>
+						 </div>	
+
+						 <div class="panel panel-default">
+							 <div class="panel-heading">
+							 <h4 class="panel-title">
+							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el6"><p>Narhlar qimmat emas(hamyonbop)</p></a>
+							 </h4>
+							 </div>
+							 <div id="el6" class="panel-collapse collapse">
+							 <div class="panel-body">Andijon bo'yicha biznikidek sharoitda, sifatli, natijasi kafolatlangan, yangi metodikalar bilan o'qitadigan o'quv markazi yo'q deb bemalol ayta olamiz. Hohlagan usulda to'lovlarni to'lashingiz mumkin. Biz ota-onalar to'lagan pulni ko'rsatayotgan hizmat bilan bir necha barobar qilib oqlaymiz.</div>
+							 </div>
+						 </div>	
+
+						 <div class="panel panel-default">
+							 <div class="panel-heading">
+							 <h4 class="panel-title">
+							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el7"><p>O'quv markazimiz hududiga kuzatuv kameralari o'rnatilgan</p></a>
+							 </h4>
+							 </div>
+							 <div id="el7" class="panel-collapse collapse">
+							 <div class="panel-body">Farzandingizni havfsizligini ta'minlash uchun mahsus tashkil qilingan.</div>
+							 </div>
+						 </div>							 
+									
+				</div>
+			</div>
+		</div>
+	</div></section>
+	<hr class="container">
+<div class="container">
+	<h2 class="text-center" style="color: #2e6da4;"><i>O'qish Qanday Boshlanadi</i></h2>
+	<div class="row">
+		<div class="col-sm-6">
+			<h3 class="text-center"><b style="color: #FF1493;">1 qadam<i style="color:#2e6da4 "> O'quv markaziga boriladi</i></b></h3>
+			<h3 class="text-center"><b style="color: #FF1493;">2 qadam<i style="color:#2e6da4 "> Registratsiyadan o'tiladi</i></b></h3>
+			<h3 class="text-center"><b style="color: #FF1493;">3 qadam<i style="color:#2e6da4 "> Guruh to'planishini kutiladi</i></b></h3>
+			<h3 class="text-center"><b style="color: #FF1493;">4 qadam<i style="color:#2e6da4 "> To'lov qilinadi</i></b></h3>
+			<h3 class="text-center"><b style="color: #FF1493;">5 qadam<i style="color:#2e6da4 "> Va nihoyat o'qish boshlanadi</i></b></h3>
+		</div>
+		<div class="col-sm-6">
+			<h2 class="text-center" >YOKI</h2>
+			<h2 class="text-center" style="color: #FF1493"><b><i>1 <a data-toggle="modal" href="#myModal">CLICK</a> bilan yoziling!</i></b></h2>
+			 <center><button type="button" class="btn btn-primary btn-lg" id="myBtn">Kursga Yozilish!</button></center>
+				<div class="modal fade" id="myModal" role="dialog">
+				    <div class="modal-dialog">    
+				      <!-- Modal content-->
+				      <div class="modal-content">
+				        <div class="modal-header">
+				         	<button type="button " class="close" data-dismiss="modal">&times;</button>
+				          	<h4>Kursga Yozilish</h4>
+					        </div>
+					        <div class="modal-body" >
+					          <form role="form" action="form_contact">
+					            <div class="form-group">
+					              <label for="name"><span class="glyphicon glyphicon-user"></span> Ismingiz</label>
+					              <input type="text" class="form-control" id="name" placeholder="Ismingiz kiriting" required>
+					            </div>
+					            <div class="form-group">
+					            	<label for="date">Yoshingiz</label>
+								    <select id="date" name="Yoshi">
+								      <option value="4">4</option>
+								      <option value="5">5</option>
+								      <option value="6">6</option>
+								      <option value="7">7</option>
+								      <option value="8">8</option>
+								      <option value="9">9</option>
+								      <option value="10">10</option>
+								      <option value="11">11</option>
+								      <option value="12">12</option> 
+								      <option value="13">13</option>
+								      <option value="14">14</option>       
+								    </select>
+					            </div>
+					            <div class="form-group">
+								    <label for="phone">Telefon Nomeringiz</label>
+								    <input type="phone" id="phone" name="phone" title="Telefon raqamingiz plus belgisi va o'n bitta raqamdan iborat bo'lishi kerak" required>
+					            </div>
+					              <button type="submit" class="btn btn-success btn-block">Yuborish</button>
+					          </form>
+					        </div>
+				      	</div>
+				    </div>
+				</div>
+			<h2 class="text-center">Shoshiling joylar cheklangan!!!</h2>
+		</div>
+	</div>
+</div>
+<hr class="container">
+
+<section class="pricing-slide" id="posts" style="height: 600px; position:relative">
+		<div class="container">
+			<div class="row">
+			<div class="br60"></div>
+				<div class="pricing-slide-heading text-center">
+					<h2 style="color: #2e6da4;" >Mijozlar mulohazalari</h2><br>
+					<div class="br60"></div>
+				</div>
+				<div class="the-pricing-slider">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators" style="position:relative">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+					  </ol>
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+						    <div class="col-md-6 col-xs-12 col-sm-6 wow zoomIn animated animated" style="visibility: visible; animation-name: zoomIn;">
+						      	<p style="color: #fff;">"Billi" o'quv markazininig o'qituvchilariga bolaga individual munosabati, qiziqarli saboqlari uchun minnatdorchilik bildirmoqchiman. Bolam quvonch bilan maktabga boradi, tadqiqotlar natijalari ham sezilarli. Sinflar bolalar bog'chasidan bolalarga maktabga birinchi marta moslashishga yordam beradi, bu esa yosh bolalar uchun juda muhimdir. Bundan tashqari, sinflar bolalarni yangi mavzular: o'qish, matematika, ingliz tili bilan tanishtiradi.</p>
+						      	<div class="person">
+						      		<img class="img-circle img-responsive" src="img/coment1.jpg" alt="">
+						      		<h4 style="color: #fff;float: right;">Jasurbek Izzatullayev</h4>
+						      	</div>
+						    </div>
+						    <div class="col-md-6 col-xs-12 col-sm-6 wow zoomIn animated animated" style="visibility: visible; animation-name: zoomIn;">
+						      	<p style="color: #fff;">Bolam 2016 yil sentyabridan buyon "Billi"ga boradi. Shu vaqt ichida u o'qish, hisoblash (misollarni 10 ga qadar) o'rganib, ingliz tilini katta quvonch bilan o'rganadi. Bolam chindan ham o'rganishni yaxshi ko'radi, mashg'ulotlar o'ynab, g'ayritabiiy tarzda o'tkaziladi. Yana bir yil yuramiz, chiroyli yozishni o'rganishni istaymiz. Barcha o'qituvchilarga juda minnatdormiz!</p>
+						      	<div class="person">
+						      		<img class="img-circle img-responsive" src="img/coment1.jpg" alt="">
+						      		<h4 style="color: #fff;float: right;">Shoxruh Isroilov</h4>
+						      	</div>
+						    </div>
+					    </div>
+					    <div class="item">
+						    <div class="col-md-6 col-xs-12 col-sm-6 wow zoomIn animated animated" style="visibility: visible; animation-name: zoomIn;">
+						      	<p style="color: #fff;"> Men "Billi" o'quv markazi o'qituvchilariga o'z minnatdorchiligimni bildirmoqchiman, farzandlarimizga e'tiboringizni, mehribonligingiz, kasbingingizga mas'uliyat bilan yondoshishingiz va qizimga begrgan bilimlaringiz uchun minnatdorchilik bildiraman. Rahmat sizga!</p>
+						      	<div class="person">
+						      		<img class="img-circle img-responsive" src="img/coment1.jpg" alt="">
+						      		<h4 style="color: #fff;float: right;">Muhammadjonov Farruh</h4>
+						      	</div>
+						    </div>
+						    <div class="col-md-6 col-xs-12 col-sm-6 wow zoomIn animated animated" style="visibility: visible; animation-name: zoomIn;">
+						      	<p style="color: #fff;">O'g'limga ta'lim berayotganingiz uchun tashakkur! Bir yil davomida o'glim o'qish va yozish, ijodiy ko'nikmalarni, musiqa va chizishni yaxshi o'zlashtirdi. Ta'limning tezligi va sifatiga, shuningdek, bolalarga qaratilayotgan e'tibordan va g'amxo'rligdan juda mamnunman. Yangi mavsumda sizlarga omad tilayman.</p>
+						      	<div class="person">
+						      		<img class="img-circle img-responsive" src="img/coment1.jpg" alt="">
+						      		<h4 style="color: #fff;float: right;">Hojiakbar Abdullayev</h4>
+						      	</div>
+						    </div>
+					    </div>
+					    <div class="item">
+						    <div class="col-md-6 col-xs-12 col-sm-6 wow zoomIn animated animated" style="visibility: visible; animation-name: zoomIn;">
+						      	<p style="color: #fff;">"Billi" o'quv markazida 2016 yilda kelganmiz. Bundan oldin bu erga katta qizim Malikani olib kelgan edim. O'qituvchilardan juda mamnunman. Og'lim ancha tartibli va mas'uliyatli bo'lib qolgan. Katta rahmat!</p>
+						      	<div class="person">
+						      		<img class="img-circle img-responsive" src="img/coment1.jpg" alt="">
+						      		<h4 style="color: #fff; float: right;">Malika Nosirova</h4>
+						      	</div>
+						    </div>
+						    <div class="col-md-6 col-xs-12 col-sm-6 wow zoomIn animated animated" style="visibility: visible; animation-name: zoomIn;">
+						      	<p style="color: #fff;">Har bir ona nimani xohlaydi? Albatta, farzandingizni sog'lom, aqlli va muvaffaqiyatli ko'rishni. Qizimni 5 yoshda buyon "Billi"ga boradi va turmush o'rtog'im bilan uni oldinroq "Billi"ga olib kelmaganimiz uchun afsuslanaman. Diyora juda kamtar va uyatchang qiz, lekin har bir bolaga alohida yondashuv ajoyib natijalarni korsatadi.</p>
+						      	<div class="person">
+						      		
+						      		<h4 style="color: #fff; float: right;">Sayyora Tursunova</h4>
+						      	</div>
+						    </div>
+					    </div>						   
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<br>
+<!-- Footer-->
+<footer class="panel-footer" id="contact">
+	<div class="container-fluid">
+		<h2 style="text-align:center;">Bog'lanish</h2>
+		<div class="col-sm-7">
+			<ul>
+				<li><h4>Manzil:Andijon Shahar...</h4></li>
+				<li><span class="glyphicon glyphicon-phone"></span>+998998158210</li>
+				<li><span class="glyphicon glyphicon-phone"></span>+998909203489</li>
+				<li><span class="glyphicon glyphicon-envelope"></span>iskandarbekibrokhimov@gmail.com</li>
+				<li><span class="glyphicon glyphicon-envelope"></span>iskandari682@gmail.com</li>
+			</ul>
+		</div>
+		<div class="col-sm-5">
+			<div class="form__wrapper">
+			      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
+			        <p class="form-message"></p>
+			          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
+			          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
+			          <input name="theme" type="hidden" class="form-input__theme"  value="Заявка с сайта">
+			          <input type="submit" class="form-input__button" value="Отправить">
+			      </form>
+			</div>
+		</div>
 
 <!DOCTYPE html>
 <html>
 <head>
-<title>ISKANDARBEK IBROKHIMOV</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+form * {
+  display: block;
+  margin: 10px;
+}
+</style>
+<script language="Javascript" >
+function download(filename, text) {
+  var pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
+
+encodeURIComponent(text));
+  pom.setAttribute('download', filename);
+
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+</script>
 </head>
-<body id="top">
+<body>
 
-<div class="wrapper row1">
-  <header id="header" class="hoc clear"> 
+<form onsubmit="download(this['name'].value, this['text'].value)">
+  <input type="text" name="name" value="test.txt">
+  <textarea rows=3 cols=50 name="text">Please type in this box. When you 
 
-    <div id="logo" class="fl_left">
-      <h1><a href="index.html">MDM Company</a></h1>
-      <p>Kelajagingni biz bilan kashf et!</p>
-    </div>
-    <nav id="mainav" class="fl_right">
-      <ul class="clear">
-        <li class="active"><a href="index.html">Bosh Sahifa <i class="fa fa-desktop"></i></a></li>
-        <li><a class="drop" href="#">Sahifalar <i class="fa fa-columns"></i></a>
-          <ul>
-            <li><a href="gallery.html">Galareya</a></li>
-            <li><a href="full-width.html">To'liq ko'rinish</a></li>
-            <li><a href="sidebar-left.html">Telefonda ko'rinish</a></li>
-            <li><a href="basic-grid.html">Odatiy ko'rinish</a></li>
-          </ul>
-        </li>
-        <li><a class="drop" href="#">Yo'nalishlar <i class="fa fa-arrows"></i></a>
-          <ul>
-            <li><a href="#">Mahsulotlar</a></li>
-            <li><a class="drop" href="#">Hizmatlar</a>
-              <ul>
-                <li><a href="#">Mijozlarga</a></li>
-                <li><a href="#">Yangi haridorlarga</a></li>
-                <li><a href="#">Yosh tadbirkorlarga</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Chegirmalar</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Manzilimiz <i class="fa fa-map"></i></a></li>
-        <li><a  href="#">Bog'lanish <i class="fa fa-phone"></i></a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
+click the Download button, the contents of this box will be downloaded to 
 
-<div class="wrapper bgded overlay" style="background-image:url('123.jpg');">
-  <div id="pageintro" class="hoc clear"> 
-    <article>
-      <h2 class="heading">MDM Company </h2>
-      <p>MDM kompaniyasi hozirda dunyoga mashhur brendlardan biri bo'lib,dunyo bo'yicha yetakchi o'rinda turadi.Bu kompaniya bilan shartnoma tuzmoqchi bo'lgan
-      eng zo'r brendlar 100 dan ortiq.Masalan:Apple,Samsung,Artel va boshqalar mavjud! </p>
-      <footer><a class="btn" href="#">A'zo bo'lish!</a></footer>
-    </article>
-  </div>
-</div>
-<div class="wrapper row3">
-  <main class="hoc container clear"> 
-    <!--BOSHLANG'ICH QISMI -->
-    <div class="center btmspace-50">
-      <h2 class="heading">So'ngi yangiliklar!</h2>
-      <p>Yangiliklar bilan doimo habardor bo'lish uchun bizning sahifamizga a'zo bo'ling!</p>
-    </div>
-    <ul class="nospace group btmspace-50">
-      <li class="one_third first">
-        <article class="element">
-          <figure><img src="3.jpg" alt="">
-            <figcaption><a class="btn small" href="#">Ko'proq...</a></figcaption>
-          </figure>
-          <div class="excerpt">
-            <time datetime="2018-01-01T08:15+00:00" data-title="June"><strong>Yanvar</strong> <em>01</em></time>
-            <h6 class="heading"><a href="#">Pillo</a></h6>
-            <p>O'zingiz hamda oilangizni sog'ligini doimo bilib borishni hohlaysizmi...</p>
-          </div>
-        </article>
-      </li>
-      <li class="one_third">
-        <article class="element">
-          <figure><img src="1.jpg" alt="">
-            <figcaption><a class="btn small" href="#">Ko'proq...</a></figcaption>
-          </figure>
-          <div class="excerpt">
-            <time datetime="2017-20-11T08:15+00:00" data-title="May"><strong>Noyabr</strong> <em>21</em></time>
-            <h6 class="heading"><a href="#">Caphot</a></h6>
-            <p>Siz qishni va sovuqni yomon ko'rasizmi? Unda sizga "Caphot" yordam...</p>
-          </div>
-        </article>
-      </li>
-      <li class="one_third">
-        <article class="element">
-          <figure><img src="123456.jpg" alt="">
-            <figcaption><a class="btn small" href="#">Ko'proq...</a></figcaption>
-          </figure>
-          <div class="excerpt">
-            <time datetime="2017-09-10T08:15+00:00" data-title="April"><strong>Oktabr</strong> <em>10</em></time>
-            <h6 class="heading"><a href="#">Hotpot</a></h6>
-            <p>Siz uy sharoitida suv isitishga qiynalyapsizmi? Unda Hotpot uni issiq...</p>
-          </div>
-        </article>
-      </li>
-    </ul>
-    <p class="center nospace"><a class="btn" href="#">A'zo bo'lish!</a></p>
-
-    <!-- / main body -->
-    <div class="clear"></div>
-  </main>
-</div>
-
-<div class="wrapper bgded overlay coloured" style="background-image:url('1234.jpg');">
-  <div class="hoc container clear"> 
-    <!-- O'RTA MAIN -->
-    <article class="center">
-      <h2 class="font-x3 =">"MDM Company"-Kelajak Poydevori!</h2>
-      <p class="btmspace-50 font-x2 ">MDM kompaniyasi 2017-yildan beri xalq uchun hizmat qilib keladi.MDM kompaniyasini asosiy maqsadi,yuqori texnalogiyalar yordami xalqqa hamda ularning hayot tarzini yengillashtirish uchun hizmat qiladi... </p>
-      <footer>
-        <ul class="nospace inline pushright">
-          <li><a class="btn inverse" href="#">Mahsulotlar</a></li>
-          <li><a class="btn" href="#">A'zo bo'lish!</a></li>
-        </ul>
-      </footer>
-    </article>
-  </div>
-</div>
-
-<div class="wrapper row3">
-  <section class="hoc container clear"> 
-    <!-- MASHXURLAR FIKRI -->
-    <div class="group">
-      <div class="one_third first btmspace-30">
-        <h6 class="font-x3 uppercase">"MDM" haqida buyuk shaxslar fikri <a href="#">&raquo;</a></h6>
-      </div>
-      <article class="one_third btmspace-30">
-        <h6 class="uppercase font-x1"><a href="#">Bill Gates</a></h6>
-        <p class="nospace">Biz MDM Company bilan uzoq yillardan beri hamkor bo'lib ishlaymiz.Bu kompaniya Mahsulotlari judayam sifatli va foydali.Men bunday kompaniya bilan birga ishlashdan hursandman...</p>
-      </article>
-      <article class="one_third btmspace-30">
-        <h6 class="uppercase font-x1"><a href="#">Alisher Usmonov</a></h6>
-        <p class="nospace">Men oilam va farzandlarim faqat MDM company mahsulotlarini foydalanamiz.Bu kompaniyani mahsulotlarini va yangiliklarini doim kuzatib boramiz.Va men hech ikkilanmasdan shuni ayta olamanki...</p>
-      </article>
-      <article class="one_third first">
-        <h6 class="uppercase font-x1"><a href="#">Leonel Messi</a></h6>
-        <p class="nospace">Har doim ham oilam uchun vaqt ajrata olmayman.Ammo MDM Company bilan buni har doim iloji bor.Men bu kompaniyani judayam hurmat qilaman.Va har qachon bu kompaniya uchun...</p>
-      </article>
-      <article class="one_third">
-        <h6 class="uppercase font-x1"><a href="#">Cristiano Ronaldo</a></h6>
-        <p class="nospace">Men mashina va boshqa texnika vositalariga judayam qiziqaman.Lekin har safar MDM Company ni mahsulotlarini sotib olaman.Chunki bu kompaniyaning mahsulotlari judayam sifatli,eng asosiysi...</p>
-      </article>
-      <article class="one_third">
-        <h6 class="uppercase font-x1"><a href="#">Walter O'brain</a></h6>
-        <p class="nospace">Men har doim ham yangi chiqarilayotgan texnika mahsulotlariga katta qiziqish uyg'otmayman.Ammo MDM Company mahsulotlarini birinchilardan bo'lib sotib olishga harakat qilaman.Chunki...</p>
-      </article>
-    </div>
-  </section>
-</div>
-<!--SO'NGI QISMI -->
-
-<div class="wrapper row4 bgded overlay" style="background-image:url('1234567.jpg');">
-  <footer id="footer" class="hoc clear"> 
-    <div class="one_quarter first">
-      <h6 class="title">MDM haqida qisqa</h6>
-      <p>MDM Company texnalogiyalar ishlab chiqaruvchi kompaniya bo'lib,Eng so'ngi turdagi texnikalar bilan sizlarning hayotingiz uchun hizmat qilib keladi</p>
-      <p>Bizning mahsulotlar butunlay xavfsiz hamda sizga sotib olgan kuningizdan boshlab 3 kafolati bilan birga beradi!</p>
-    </div>
-    <div class="one_quarter">
-      <h6 class="title">    Manzilimiz</h6>
-      <ul class="nospace linklist contact">
-        <li><i class="fa fa-map-marker"></i>
-          <address>
-          Taraqqiyot Ko'chasi &amp; 218, Andijon,O'zbekiston
-          </address>
-        </li>
-        <li><i class="fa fa-phone"></i>+998998158210<br>
-          +998979948071</li>
-        <li><i class="fa fa-fax"></i> +998934283181</li>
-        <li><i class="fa fa-envelope-o"></i> mdmcompany@mail.uz</li>
-      </ul>
-    </div>
-
-    <div class="one_quarter">
-      <h6 class="title">Taklif va shikoyatlar uchun</h6>
-      <ul class="nospace linklist">
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">Takliflar uchun</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2017-01-01">Menejer:SHakhzodbek Ohunjonov</time>
-            <p class="nospace">shakhzod1999@gmail.com<br>+998979948071</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">Shikoyatlar uchun</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-05">Director:Iskandarbek Ibrokhimov</time>
-            <p class="nospace">iskandari682@gmail.com<br>+998998158210</p>
-          </article>
-        </li>
-      </ul>
-    </div>
-        <div class="one_quarter">
-      <h6 class="title"><DATA>Ko'p soraladigon savollar</DATA></h6>
-      <ul class="nospace linklist">
-        <li><a href="#">Qanday a'zo bo'lish mumkin?</a></li>
-        <li><a href="#">Chegirmalar mavjudmi?</a></li>
-        <li><a href="#">Buyurtma berish mumkinmi?</a></li>
-        <li><a href="#">Boshlang'ich to'lov qancha?</a></li>
-        <li><a href="#">Boshqa savollarga o'tish...</a></li>
-      </ul>
-    </div>
-
-  </footer>
-</div>
-
+your machine at the location you specify. Pretty nifty. </textarea>
+  <input type="submit" value="Download">
+</form>
+		
+	
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
     <!-- so'ngi qismi -->
-    <p class="fl_left">Copyright &copy; 2017 - Hizmatlar Litsenziyalangan - <a href="#">MDMcompany.uz</a></p>
+    <p class="fl_left">&copy; 2018 - <a href="https://www.t.me/Iskandari777"><img src="telegram.png" width="25px" height="25px"> Iskandarbek</a></p>
   </div>
 </div>
+</div>
+	<a id="backtotop" href="#myPage" class="visible"><i class="fa fa-chevron-up"></i></a>
+</footer>
+<!-- Footer tugatilishi-->
+<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links in navbar + footer link
+	  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
 
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<!-- JAVASCRIPTLAR -->
-<script src="jquery.min.js"></script>
-<script src="jquery.backtotop.js"></script>
-<script src="jquery.mobilemenu.js"></script>
-<script src="jquery.placeholder.min.js"></script>
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 900, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	  
+	  $(window).scroll(function() {
+	    $(".slideanim").each(function(){
+	      var pos = $(this).offset().top;
+
+	      var winTop = $(window).scrollTop();
+	        if (pos < winTop + 600) {
+	          $(this).addClass("slide");
+	        }
+	    });
+	  });
+	})
+</script>
+	<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+<!--<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+-->
+
+																				<!--TelegramForm-->
+<script>
+$(document).ready(function () {
+    $("form-element").submit(function () {
+        var formID = $(this).attr('id');
+        var formNm = $('#' + formID);
+        var message = $(formNm).find(".form-message");
+        var formTitle = $(formNm).find(".form-title");
+        $.ajax({
+            type: "POST",
+            url: 'send-message-to-telegram.php',
+            data: formNm.serialize(),
+            success: function (data) {
+              // Вывод сообщения об успешной отправке
+              message.html(data);
+              formTitle.css("display","none");
+              setTimeout(function(){
+                formTitle.css("display","block");
+                message.html('');
+                $('input').not(':input[type=submit], :input[type=hidden]').val('');
+              }, 3000);
+            },
+            error: function (jqXHR, text, error) {
+                // Вывод сообщения об ошибке отправки
+                message.html(error);
+                formTitle.css("display","none");
+                setTimeout(function(){
+                  formTitle.css("display","block");
+                  message.html('');
+                  $('input').not(':input[type=submit], :input[type=hidden]').val('');
+                }, 3000);
+            }
+        });
+        return false;
+    });
+});</script>
 </body>
 </html>
