@@ -7,7 +7,7 @@ if (!empty($_POST['name']) && !empty($_POST['phone'])){
   $nameFieldset = "Имя пославшего: ";
   }
 }
- 
+
 if (isset($_POST['phone'])) {
   if (!empty($_POST['phone'])){
   $phone = strip_tags($_POST['phone']);
@@ -30,9 +30,9 @@ $arr = array(
 foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };
-$sendToTelegram = fopen("https://api.telegram.org/bot{386022962:AAEB3ks2fSrExTDhde6ZPtKLo-ZFx3B6Gnw}/sendMessage?chat_id={-305991601}&parse_mode=html&text={$txt}","r");
+$sendToTelegram = fopen("https://api.telegram.org/bot{$-305991601}/sendMessage?chat_id={$386022962:AAEB3ks2fSrExTDhde6ZPtKLo-ZFx3B6Gnw}&parse_mode=html&text={$txt}","r");
 if ($sendToTelegram) {
-  
+ 
   echo '<p class="success">Спасибо за отправку вашего сообщения!</p>';
     return true;
 } else {
@@ -44,5 +44,5 @@ if ($sendToTelegram) {
 } else {
 header ("Location: /");
 }
- 
+
 ?>
