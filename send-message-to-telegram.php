@@ -1,22 +1,22 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-if (!empty($GET['name']) && !empty($GET['phone'])){
-  if (isset($GET['name'])) {
-    if (!empty($GET['name'])){
-  $name = strip_tags($GET['name']);
+if (!empty($_POST['name']) && !empty($_POST['phone'])){
+  if (isset($_POST['name'])) {
+    if (!empty($_POST['name'])){
+  $name = strip_tags($_POST['name']);
   $nameFieldset = "Имя пославшего: ";
   }
 }
 
-if (isset($GET['phone'])) {
-  if (!empty($GET['phone'])){
-  $phone = strip_tags($GET['phone']);
+if (isset($_POST['phone'])) {
+  if (!empty($_POST['phone'])){
+  $phone = strip_tags($_POST['phone']);
   $phoneFieldset = "Телефон: ";
   }
 }
-if (isset($GET['theme'])) {
-  if (!empty($GET['theme'])){
-  $theme = strip_tags($GET['theme']);
+if (isset($_POST['theme'])) {
+  if (!empty($_POST['theme'])){
+  $theme = strip_tags($_POST['theme']);
   $themeFieldset = "Тема: ";
   }
 }

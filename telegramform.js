@@ -6,7 +6,7 @@ $(document).ready(function () {
         var formTitle = $(formNm).find(".form-title");
         $.ajax({
             type: "POST",
-            url: './telegramform/php/send-message-to-telegram.php',
+            url: 'send-message-to-telegram.php',
             data: formNm.serialize(),
             success: function (data) {
               // Вывод сообщения об успешной отправке
@@ -32,5 +32,5 @@ $(document).ready(function () {
         return false;
     });
 
-    $('.form-element').append('<p class="creator"><a href="http://smartlanding.biz">smartlanding.biz</a></p>');
+    $('.form-element').append('<p class="creator"><a href="http://t.me/iskandari777">Creator</a></p>');
 });
