@@ -4,9 +4,9 @@
 	<title>Billi.uz</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="bootstrap.min.js" ></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="Icon-font-7-stroke-PIXEDEN-v-1.2.0/assets/pe-icon-7-stroke.css">
 </head>
@@ -56,35 +56,18 @@
 				        <div class="modal-header">
 				         	<button type="button " class="close" data-dismiss="modal">&times;</button>
 				          	<h4>Kursga Yozilish</h4>
+				          	<p style="font-size: 14px;">Darsga qo'shimcha sport to'garaklariga qatnashib, jismonan sog'lom bo'ladi qaddi qomati chiroyli bo'ladi, oyoq yassiligi bo'lsa yo'qoladi, tana a'zolari tekkis rivojlanadi.</p>
 					        </div>
 					        <div class="modal-body" >
-					          <form role="form" action="form_contact">
-					            <div class="form-group">
-					              <label for="name"><span class="glyphicon glyphicon-user"></span> Ismingiz</label>
-					              <input type="text" class="form-control" id="name" placeholder="Ismingiz kiriting" required>
-					            </div>
-					            <div class="form-group">
-					            	<label for="date">Yoshingiz</label>
-								    <select id="date" name="Yoshi">
-								      <option value="4">4</option>
-								      <option value="5">5</option>
-								      <option value="6">6</option>
-								      <option value="7">7</option>
-								      <option value="8">8</option>
-								      <option value="9">9</option>
-								      <option value="10">10</option>
-								      <option value="11">11</option>
-								      <option value="12">12</option> 
-								      <option value="13">13</option>
-								      <option value="14">14</option>       
-								    </select>
-					            </div>
-					            <div class="form-group">
-								    <label for="phone">Telefon Nomeringiz</label>
-								    <input type="phone" id="phone" name="phone" title="Telefon raqamingiz plus belgisi va o'n bitta raqamdan iborat bo'lishi kerak" required>
-					            </div>
-					              <button type="submit" class="btn btn-success btn-block">Yuborish</button>
-					          </form>
+						        <div class="form__wrapper">
+							      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
+							        <p class="form-message"></p>
+							          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
+							          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
+							          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
+							          <input type="submit" class="form-input__button" value="Yuborish">
+							      </form>
+								</div>
 					        </div>
 				      	</div>
 				    </div>
@@ -500,50 +483,13 @@
 			        <p class="form-message"></p>
 			          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
 			          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-			          <input name="theme" type="hidden" class="form-input__theme"  value="Заявка с сайта">
-			          <input type="submit" class="form-input__button" value="Отправить">
+			          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
+			          <input type="submit" class="form-input__button" value="Yuborish">
 			      </form>
 			</div>
 		</div>
 
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-form * {
-  display: block;
-  margin: 10px;
-}
-</style>
-<script language="Javascript" >
-function download(filename, text) {
-  var pom = document.createElement('a');
-  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
 
-encodeURIComponent(text));
-  pom.setAttribute('download', filename);
-
-  pom.style.display = 'none';
-  document.body.appendChild(pom);
-
-  pom.click();
-
-  document.body.removeChild(pom);
-}
-</script>
-</head>
-<body>
-
-<form onsubmit="download(this['name'].value, this['text'].value)">
-  <input type="text" name="name" value="test.txt">
-  <textarea rows=3 cols=50 name="text">Please type in this box. When you 
-
-click the Download button, the contents of this box will be downloaded to 
-
-your machine at the location you specify. Pretty nifty. </textarea>
-  <input type="submit" value="Download">
-</form>
-		
 	
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
