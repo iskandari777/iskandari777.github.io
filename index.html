@@ -625,19 +625,18 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
 <footer class="panel-footer" id="contact">
 	<div class="container-fluid">
 		<h1 style="text-align:center; color: #FF1493;">O'qishni Hoziroq Boshlang!</h1><br>
-			<div class="col-sm-3" >
+			<div class="col-sm-4" >
 				<center><h3 style="color: #2e6da4;">BILLI №1</h3><h3 style="color: #2e6da4;"> Andijon shahar Boburshox ko'cha 38 uy Mo'ljal: Sarbon to'yhonasi</h3>
 				<h3 style="color: #2e6da4;">+998 91 601 99 88</h3></center>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-4">
 				<center><h3 style="color: #2e6da4;">BILLI №2</h3><h3 style="color: #2e6da4;">Andijon shahar Bo'ston dahasi 11-marshrut ohirgi bekati</h3>
 				<h3 style="color: #2e6da4;">+998 93 910 99 88</h3></center>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-4">
 				<center><h3 style="color: #2e6da4;">BILLI №3</h3><h3 style="color: #2e6da4;">Andijon shahar 1-kichik daha Mo'ljal: 32-pochta bo'limi 41-bolalar bog'chasi oldida</h3></center>
 
 			</div>						
-		<div class="col-sm-3">
 <!--			<div class="form__wrapper">
 			      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
 			      	<p class="form-title">Закажите обратный звонок и наш консультант свяжется с вами</p>
@@ -649,18 +648,24 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
 			      </form>
 			</div>
 		</div>-->
-<div class="form__wrapper">
-      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-        <p class="form-title">Ma'lumotlarni To'ldiring va Biz Tez Orada Siz Bilan Bog'lanamiz</p>
-        <p class="form-message"></p>
-          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-          <input name="theme" type="hidden" class="form-input__theme"  value="Заявка с сайта">
-          <input type="submit" class="form-input__button" value="Yuborish">
-      </form>
-    </div>
+<div class="container">
+	<div class="col-sm-6">
+<div id="googleMap" style="width:90%;height:400px; background-color: yellow;"></div>
 </div>
-
+	<div class="col-sm-6">
+		<div class="form__wrapper">
+		      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
+		        <p class="form-title">Ma'lumotlarni To'ldiring va Biz Tez Orada Siz Bilan Bog'lanamiz</p>
+		        <p class="form-message"></p>
+		          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
+		          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
+		          <input name="theme" type="hidden" class="form-input__theme"  value="Заявка с сайта">
+		          <input type="submit" class="form-input__button" value="Yuborish">
+		      </form>
+		    </div>
+		</div>
+	</div>
+</div>
 	
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
@@ -729,20 +734,19 @@ $(document).ready(function(){
     });
 });
 </script>
-<!--<script>
+
+<script>
 function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 </script>
 
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
--->
-
+<script src="https://maps.google.com/maps?q=40.782386,72.332032&ll=40.782386,72.332032&z=16"></script>
+<!--
 																				
 </body>
 </html>
