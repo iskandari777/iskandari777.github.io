@@ -1,361 +1,307 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Billi.uz</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="./telegramform/js/telegramform.js"></script>
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link rel="stylesheet" type="text/css" href="Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-</head>
-<!-- Boshlanish-->
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"><!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-(function(){ var widget_id = 'DE27wF3YBF';var d=document;var w=window;function l(){
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
-<!-- {/literal} END JIVOSITE CODE -->
-					<!--Navbar-->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-		<div class="navbar navbar-brand"><a href=""><img src="billi.png" style="width: 100%;"></a></div>
-	    </div>
-	    <div class="collapse navbar-collapse" id="myNavbar">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#about">Biz haqimizda</a></li>
-	        <li><a href="#services">Yo'nalishlari</a></li>
-	        <li><a href="#aksiya">Aksiya</a></li>
-	        <li><a href="#fikr">Mijozlarimiz Fikrlari</a></li>
-	        <li><a href="#contact">Bog'lanish</a></li>
-	        <li><a href="" style="font-size: 24px;"> +998 93 910 99 88</a></li>
-	      </ul>
-	    </div>
-    </div>
-</nav>
-	<!--Navbar End-->
-<!-- Header image-->
-<div class="container">
-	<div class="row">
-		<div class="col-sm-6"><center>
-			  <img src="1234.jpg" style="width:90%;"></center>
-		</div>
-		<div class="col-sm-6">
-			<div id="about"><br><br><center>
-					<h2 style="color:#337ab7;"><b>Bizda 4 yoshdan 16 yoshgacha o'quv kurslari mavjud</b></h2>
-						<p id="textt"><b>Farzandingizni to'garaklarga yozdiring va bonus sifatida +INGLIZ TILI kursiga bepul ega bo'ling.</b></p>
-						<!--Button A'loqa-->
-			<h2 style="color: #337ab7"><b>Hoziroq O'qishni Boshlang!</b></h2>
-			  <!-- Trigger the modal with a button -->
-			  <button type="button" class="btn btn-primary btn-lg" id="myBtn">Kursga Yozilish!</button>
-				<div class="modal fade" id="myModal" role="dialog">
-				    <div class="modal-dialog">    
-				      <!-- Modal content-->
-				      <div class="modal-content">
-				        <div class="modal-header">
-				         	<button type="button " class="close" data-dismiss="modal">&times;</button>
-				          	<h4>Kursga Yozilish</h4>
-					        </div>
-					        <div class="modal-body" >
-						        <div class="form__wrapper">
-							      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-							        <p class="form-message"></p>
-							          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-							          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-							          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
-							          <input type="submit" class="form-input__button" value="Yuborish">
-							      </form>
+	<html>
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Billi.uz</title> 
+																	<!--CSS -->
+
+			<link rel="stylesheet" type="text/css" href="Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+			<link rel="stylesheet" type="text/css" href="css/index.css">
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">			
+			<link rel="stylesheet" href="css/jquery-ui.css">			
+			<link rel="stylesheet" href="css/main.css">
+
+		</head>
+		<body>	
+			<script type='text/javascript'>
+				(function(){ 
+					var widget_id = 'DE27wF3YBF';
+					var d=document;var w=window;function l()
+					{var s = document.createElement('script');
+					s.type = 'text/javascript';
+					s.async = true; 
+					s.src = '//code.jivosite.com/script/widget/'+widget_id; 
+					var ss = document.getElementsByTagName('script')[0]; 
+					ss.parentNode.insertBefore(s, ss);}
+				if(d.readyState=='complete'){l();}
+				else{
+					if(w.attachEvent){w.attachEvent('onload',l);}
+					else{w.addEventListener('load',l,false);}}})();
+			</script>
+		  <header id="header" id="home">
+	  		<div class="header-top">
+	  			<div class="container">
+			  		<div class="row">
+			  			<div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+			  				<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-telegram"></i></a></li>
+			  				</ul>			
+			  			</div>
+			  			<div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
+			  				<a href="tel:+998 91 601 99 88"><span class="lnr lnr-phone-handset"></span> <span class="text">+998 91 601 99 88</span></a>
+			  				<a href=""><span class="lnr lnr-envelope"></span> <span class="text">info@billi.uz</span></a>			
+			  			</div>
+			  		</div>			  					
+	  			</div>
+			</div>
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="index.html"><img src="img/billi.png" alt="" title="" /></a>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+				        <li><a href="#about" style="font-size: 16px;">Biz haqimizda</a></li>
+				        <li><a href="#services" style="font-size: 16px;">Yo'nalishlari</a></li>
+				        <li><a href="#aksiya" style="font-size: 16px;">Aksiya</a></li>
+				        <li><a href="#fikr" style="font-size: 16px;">Mijozlarimiz Fikrlari</a></li>
+				        <li><a href="#contact" style="font-size: 16px;">Bog'lanish</a></li>
+			        </ul>
+			      </nav><!-- #nav-menu-container -->		    		
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="about">
+				<div class="overlay overlay-bg"></div>	
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-between">
+						<div class="banner-content col-lg-9 col-md-12">
+							<h1 class="text-uppercase">
+								Billi O'quv Markazi - Kelajakning Buyuk Farzandlari Poydevori			
+							</h1>
+							<p class="pt-10 pb-10" style="font-size: 20px;">
+								Bizda 4 yoshdan 16 yoshgacha o'quv kurslari mavjud Farzandingizni to'garaklarga yozdiring va bonus sifatida +INGLIZ TILI kursiga bepul ega bo'ling. Hoziroq O'qishni Boshlang!
+							</p>
+							 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+							    Kursga Yozilish
+							  </button>
+							  <!-- The Modal -->
+							<div class="modal fade" id="myModal">
+							    <div class="modal-dialog modal-dialog-centered">
+							      	<div class="modal-content">
+							        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">Kursga Yozilish</h4>
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								        </div>
+							        
+							        <!-- Modal body -->
+							        	<div class="modal-body">
+								        <div class="form__wrapper">
+									      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
+									        <p class="form-message"></p>
+									          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
+									          	<label></label>
+									          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required> <label></label>	
+									          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
+									          <label>	</label>
+									          <input type="submit" class="form-input__button" value="Yuborish">
+									      </form>
+										</div>
+							   			</div>
+							      	</div>
+							    </div>
+							</div>
+						</div>										
+					</div>
+				</div>					
+			</section>
+			<section class="popular-course-area section-gap" id="services">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Bizda mavjud o'quv kurslar</h1>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="active-popular-carusel">
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/p1.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+									</div>									
 								</div>
-					        </div>
-				      	</div>
-				    </div>
-				</div> 
-			</div></center>
-		</div>
-	</div>
-</div>
-<!-- Header End-->
+								<div class="details">
+									<a data-toggle="modal" href="#myModal"  >
+										<h4>
+											Maktabgacha Ta'lim
+										</h4>
+									</a>
+									<p>
+																				
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/p2.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+									</div>									
+								</div>
+								<div class="details">
+									<a data-toggle="modal" href="#myModal">
+										<h4>
+											Mental Arifmetika
+										</h4>
+									</a>
+									<p>
+																				
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/p3.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+									</div>									
+								</div>
+								<div class="details">
+									<a data-toggle="modal" href="#myModal">
+										<h4>
+											Ingliz Tili
+										</h4>
+									</a>
+									<p>
+																				
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/p4.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+										
+									</div>									
+								</div>
+								<div class="details">
+									<a data-toggle="modal" href="#myModal">
+										<h4>
+											Karate
+										</h4>
+									</a>
+									<p>
+																				
+									</p>
+								</div>
+							</div>
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/p5.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+										
+									</div>									
+								</div>
+								<div class="details">
+									<a data-toggle="modal" href="#myModal">
+										<h4>
+											Rasm Chizish
+										</h4>
+									</a>
+									<p>
+																			
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/p6.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+										
+									</div>									
+								</div>
+								<div class="details">
+									<a data-toggle="modal" href="#myModal">
+										<h4>
+											Rus Tili
+										</h4>
+									</a>
+									<p>
+																				
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/p7.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+										
+									</div>									
+								</div>
+								<div class="details">
+									<a data-toggle="modal" href="#myModal">
+										<h4>
+											Gimnastika
+										</h4>
+									</a>
+									<p>
+																				
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/p8.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+										
+										
+									</div>									
+								</div>
+								<div class="details">
+									<a data-toggle="modal" href="#myModal">
+										<h4>
+											Uy vazifasiga Yordam berish
+										</h4>
+									</a>
+									<p>
+																				
+									</p>
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>	
+			</section>
 
-					<!-- Biz haqimizda-->
-
-</div><br><br class="container">
-	<div class="container" id="services">
-		<h2 id="kirish" style="text-align: center;color: #2e6da4;"><b> Bizda mavjud o'quv kurslar</b></h2>
-		<div class="row">
-			<div class="col-sm-3">
-																	<!--Maktabgacha Tayyorlov-->
-<div class="modal fade" id="myModal1" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-	    <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title">Maktabgacha Tayyorlov Kursi</h4>
-	        </div>
-	        <div class="modal-body row">
-	        	<div class="col-md-6">
-	          Bolajoningizni maktabga tayyorlashni xohlaysizmi? «BILLI» o’quv marazi maktabga tayyorlov guruhiga taklif qiladi, biz farzandlaringizni kelajakda o’qishda muvaffaqiyatlarga erishishiga tayyorlaymiz, ijtimoiy, ruhiy va intellektual tomondan komil bo’lishiga yordam beramiz. Sizning farzandingiz o’ziga ishonch va bilimga ega buladi, uning fanlarni o’zlashtirishi va yangi ma’lumotlarni tez anglashi sezilarli darajada osonlashadi.
-	      		</div>
-	          	<div class="col-md-6">
-			        <div class="form__wrapper">
-					      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-					        <p class="form-message"></p>
-					          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-					          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-					          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
-					          <input type="submit" class="form-input__button" value="Yuborish">
-					      </form>
-					</div>
-	          	</div>
-	        </div>
-    	</div>
-    </div>
-</div>
-																	<!--Mental Arifmetika-->
-<div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-	    <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title">Mental Arifmetika Kursi</h4>
-	        </div>
-	        <div class="modal-body row">
-	          	<div class="col-md-12">
-			        <div class="form__wrapper">
-					      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-					        <p class="form-message"></p>
-					          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-					          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-					          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
-					          <input type="submit" class="form-input__button" value="Yuborish">
-					      </form>
-					</div>
-	          	</div>
-	        </div>
-    	</div>
-    </div>
-</div>
-                       												<!--Rus Tili Kursi-->
-<div class="modal fade" id="myModal3" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-	    <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title">Rus tili Kursi</h4>
-	        </div>
-	        <div class="modal-body row">
-	        	<div class="col-md-6">Diqqat, diqqat ! “Rus tili” guruxiga qabul boshlandi! Rus tili – juda boy va qudratli til xisoblanadi. Bizning yurtimizda ham juda ko’p axoli rus tilida gaplashadi, lekin xamma xam bu tilda to’g’ri, bemalol va qoidasi bo’yicha gapira olmaydi.
-	      		</div>
-	          	<div class="col-md-6">
-			        <div class="form__wrapper">
-					      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-					        <p class="form-message"></p>
-					          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-					          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-					          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
-					          <input type="submit" class="form-input__button" value="Yuborish">
-					      </form>
-					</div>
-	          	</div>
-	        </div>
-    	</div>
-    </div>
-</div>
-																	<!--Rasm Chizish-->
-<div class="modal fade" id="myModal4" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-	    <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title">Rasm Chizish</h4>
-	        </div>
-	        <div class="modal-body row">
-	          	<div class="col-md-12">
-			        <div class="form__wrapper">
-					      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-					        <p class="form-message"></p>
-					          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-					          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-					          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
-					          <input type="submit" class="form-input__button" value="Yuborish">
-					      </form>
-					</div>
-	          	</div>
-	        </div>
-    	</div>
-    </div>
-</div>
-																	<!--Karate-->
-<div class="modal fade" id="myModal5" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-	    <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title">Karate</h4>
-	        </div>
-	        <div class="modal-body row">
-	          	<div class="col-md-12">
-			        <div class="form__wrapper">
-					      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-					        <p class="form-message"></p>
-					          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-					          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-					          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
-					          <input type="submit" class="form-input__button" value="Yuborish">
-					      </form>
-					</div>
-	          	</div>
-	        </div>
-    	</div>
-    </div>
-</div>
-																	<!--Gimnastika-->
-<div class="modal fade" id="myModal6" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-	    <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title">Gimnastika</h4>
-	        </div>
-	        <div class="modal-body row">
-	          	<div class="col-md-12">
-			        <div class="form__wrapper">
-					      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-					        <p class="form-message"></p>
-					          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-					          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-					          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
-					          <input type="submit" class="form-input__button" value="Yuborish">
-					      </form>
-					</div>
-	          	</div>
-	        </div>
-    	</div>
-    </div>
-</div>
-																	<!--Ingliz Tili-->
-<div class="modal fade" id="myModal7" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-	    <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title">Ingliz Tili</h4>
-	        </div>
-	        <div class="modal-body row">
-	          	<div class="col-md-12">
-			        <div class="form__wrapper">
-					      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-					        <p class="form-message"></p>
-					          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-					          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-					          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
-					          <input type="submit" class="form-input__button" value="Yuborish">
-					      </form>
-					</div>
-	          	</div>
-	        </div>
-    	</div>
-    </div>
-</div>
-																	<!--Uy Vazifasiga Yordam Berish-->
-<div class="modal fade" id="myModal8" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-	    <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title">Uy Vazifasiga Yordam Berish</h4>
-	        </div>
-	        <div class="modal-body row">
-	          	<div class="col-md-12">
-			        <div class="form__wrapper">
-					      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-					        <p class="form-message"></p>
-					          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-					          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-					          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
-					          <input type="submit" class="form-input__button" value="Yuborish">
-					      </form>
-					</div>
-	          	</div>
-	        </div>
-    	</div>
-    </div>
-</div>
-				
-				<center><a data-toggle="modal" href="#myModal1"><div class="panel panel-default" style="width:80%;">
-				    <div class="panel-heading"><img class="img-rounded" src="maktab.png" style="width:100%; max-height: 156px;"></div>
-				    <div class="panel-body"><center><b style="font-size: 16px;">Maktabgacha Ta'lim</b><p style="color: grey;">4-16 yosh bolalar uchun</p></center></div>
-				</div></a></center>
-			</div>	
-			<div class="col-sm-3">
-				  <center><a data-toggle="modal" href="#myModal2"><div class="panel panel-default" style="width:80%;">
-				    <div class="panel-heading"><img class="img-rounded" src="mental.png" style="width:100%; max-height: 156px;"></div>
-				    <div class="panel-body"><center><b style="font-size: 16px;">Mental Arifmetika</b><p style="color: grey;">4-16 yosh bolalar uchun</p></center></div>
-				  </div></a></center>
-			</div>			
-			<div class="col-sm-3">
-				  <center><a data-toggle="modal" href="#myModal3"><div class="panel panel-default" style="width:80%;">
-				    <div class="panel-heading"><img class="img-rounded" src="rus.png" style="width:100%; max-height: 156px;"></div>
-				    <div class="panel-body"><center><b style="font-size: 16px;">Rus Tili</b><p style="color: grey;">7-16 yosh bolalar uchun</p></center></div>
-				  </div></a></center>
-			</div>
-			<div class="col-sm-3">
-				  <center><a data-toggle="modal" href="#myModal4"><div class="panel panel-default" style="width:80%;">
-				    <div class="panel-heading"><img class="img-rounded" src="paint.png" style="width:100%; max-height: 156px;"></div>
-				    <div class="panel-body"><center><b style="font-size: 16px;">Rasm Chizish</b><p style="color: grey;">7-16 yosh bolalar uchun</p></center></div>
-				  </div></a></center>
-			</div>				
-		</div>
-		<div class="row">
-			<div class="col-sm-3">
-				  <center><a data-toggle="modal" href="#myModal5"><div class="panel panel-default" style="width:80%;">
-				    <div class="panel-heading"><img class="img-rounded" src="karate.png" style="width:100%; max-height: 156px;"></div>
-				    <div class="panel-body"><center><b style="font-size: 16px;">Karate</b><p style="color: grey;">4-16 yosh bolalar uchun</p></center></div>
-				  </div></a></center>
-			</div>	
-			<div class="col-sm-3">
-				  <center><a data-toggle="modal" href="#myModal6"><div class="panel panel-default" style="width:80%;">
-				    <div class="panel-heading"><img class="img-rounded" src="gym.png" style="width:100%; max-height: 156px;"></div>
-				    <div class="panel-body"><center><b style="font-size: 16px;">Gimnastika</b><p style="color: grey;">4-16 yosh bolalar uchun</p></center></div>
-				  </div></a></center>
-			</div>
-			<div class="col-sm-3">
-				  <center><a data-toggle="modal" href="#myModal7"><div class="panel panel-default" style="width:80%;">
-				    <div class="panel-heading"><img class="img-rounded" src="eng.png" style="width:100%; max-height: 156px;"></div>
-				    <div class="panel-body"><center><b style="font-size: 16px;">Ingliz Tili</b><p style="color: grey;">4-16 yosh bolalar uchun</p></center></div>
-				  </div></a></center>
-			</div>
-			<div class="col-sm-3">
-				  <center><a data-toggle="modal" href="#myModal8"><div class="panel panel-default" style="width:80%;">
-				    <div class="panel-heading"><img class="img-rounded" src="home.png" style="width:100%; max-height: 156px;"></div>
-				    <div class="panel-body"><center><b style="font-size: 16px;">Uy vazifasiga Yordam berish</b><p style="color: grey;">7-16 yosh bolalar uchun</p></center></div>
-				  </div></a></center>
-			</div>				
-		</div>
-	</div>
-<section class="fun_facts parallax" id="bi">
+	<section class="fun_facts parallax" id="bi">
         <div class="section_overlay">
             <div class="container wow bounceInLeft animated" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: bounceInLeft;">
                 <div class="row text-center">
@@ -391,21 +337,53 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
             </div>
         </div>
     </section>
-<div >
-	<div class="container-fluid" id="ttt">
+    <div class="container-fluid" id="ttt">
 		<div class="container" id="aksiya"><br>
 			<div class="row">
-				<div class="col-sm-6"><img src="babby.png" style="width:100%;"></div>
+				<div class="col-sm-6"><img src="img/maktab.jpg" style="width:100%;"></div>
 					<br><br>
-					<div class="col-sm-6"><h2 style="text-align: center; color: #FF1493">Diqqat Bizda Aksiya!</h2><h2 style="text-align: center; color: #FF1493">Faqatgina Siz Uchun!</h2>
-						<div ><h3 style="text-align: center; color: #337ab7">Farzandingiz Qobilyatlimi? -Albatta </h3>
-						<h4 style="text-align: center; color: #337ab7;">4-16 Yoshgacha bolalar uchun oliy ma'lumotli pedagog-psixologdan</h4>
-						<h3 style="text-align: center; color: #FF1493">MUTLAQO BEPUL MASLAHAT!</h3>
-						<h4 style="text-align: center;color:  #337ab7;">200 000 so'mlik maslahatlar 31-iyungacha bepul</h4>
-						<center><button type="button" class="btn btn-primary btn-lg" id="myBtnb">BATAFSIL</button></center><br>
-<div class="modal fade" id="myModalb" role="dialog">
+					<div class="col-sm-6"><br><br><br><h2 style="text-align: center; color: rgba(4,9,30,0.9);">Diqqat Bizda Aksiya!</h2><h2 style="text-align: center; color: rgba(4,9,30,0.9);">Faqatgina Siz Uchun!</h2><br>
+						<div ><h3 style="text-align: center; color:#777">Farzandingiz Qobilyatlimi? -Albatta </h3>
+						<h4 style="text-align: center; color:#777">4-16 Yoshgacha bolalar uchun oliy ma'lumotli pedagog-psixologdan</h4><br>
+						<h3 style="text-align: center; color: rgba(4,9,30,0.9);">MUTLAQO BEPUL MASLAHAT!</h3><br>
+						<h4 style="text-align: center;color:  #777">200 000 so'mlik maslahatlar 31-iyungacha bepul</h4><br>
+						<center><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" style="background-color: #2e6da4; border-color: #2e6da4">
+							   Batafsil
+							  </button>
+							  <!-- The Modal -->
+							<div class="modal fade" id="myModal">
+							    <div class="modal-dialog modal-dialog-centered">
+							      	<div class="modal-content">
+							        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">Kursga Yozilish</h4>
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								        </div>
+							        <!-- Modal body -->
+							        	<div class="modal-body">
+								        <div class="form__wrapper">
+									      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
+									        <p class="form-message"></p>
+									          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
+									          	<label></label>
+									          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required> <label></label>	
+									          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
+									          <label>	</label>
+									          <input type="submit" class="form-input__button" value="Yuborish">
+									      </form>
+										</div>
+							   			</div>
+							      	</div>
+							    </div>
+							</div></center><br>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModalb" role="dialog">
     <div class="modal-dialog">
-    
       <!-- Modal content-->
 	    <div class="modal-content">
 	        <div class="modal-header">
@@ -414,11 +392,11 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
 	        </div>
 	        <div class="modal-body row">
 	        	<div class="col-md-6">
-	          <p style="font-size: 14px;">- farzandingizni xozirgi xolati, o’z yoshiga nisbatan bilim darajasini yetarlimi?</p>
-<p style="font-size: 14px;">- farzandingiz uchun aynan qanday to'garaklar eng foydali ekanini,</p>
-<p style="font-size: 14px;">- yana nimalarga e'tibor berishi kerak, qo’shimcha shug’ullanish kerakmi? yoki yo’qmi?</p>
-<p style="font-size: 14px;">- Shu va boshqa qiziqarli va juda foydali ma'lumotlarni bilib olishingiz mumkin.</p>
-<p style="font-size: 14px;">Aksiya 31 yanvargacha davom etadi. Undan keyin maslaxat pulli, narxi 200.000 so'm.</p>
+				<p style="font-size: 14px;">- farzandingizni xozirgi xolati, o’z yoshiga nisbatan bilim darajasini yetarlimi?</p>
+				<p style="font-size: 14px;">- farzandingiz uchun aynan qanday to'garaklar eng foydali ekanini,</p>
+				<p style="font-size: 14px;">- yana nimalarga e'tibor berishi kerak, qo’shimcha shug’ullanish kerakmi? yoki yo’qmi?</p>
+				<p style="font-size: 14px;">- Shu va boshqa qiziqarli va juda foydali ma'lumotlarni bilib olishingiz mumkin.</p>
+				<p style="font-size: 14px;">Aksiya 31 yanvargacha davom etadi. Undan keyin maslaxat pulli, narxi 200.000 so'm.</p>
 	      		</div>
 	          	<div class="col-md-6">
 			        <div class="form__wrapper">
@@ -434,319 +412,272 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
 	        </div>
     	</div>
     </div>
-</div>						
-					</div>
-				</div>
-			</div>				
-		</div>
-	</div>
-</div>	
-<br ><br >
-<br>
-    <div class="container"><center>
+</div><br>
+<div class="container"><center>
+    <div class="row" style="width: 80%;">
+	    	<div class="col-sm-3"><img src="img/1c.jpg" style="width: 100%;"></div>
+	    	<div class="col-sm-3"><img src="img/3c.jpg" style="width: 100%;"></div>
+	    	<div class="col-sm-3"><img src="img/2c.jpg" style="width: 100%;"></div>
+	    	<div class="col-sm-3"><img src="img/4c.jpg" style="width: 100%;"></div>
+    </div></center>
+</div><br>
+<!--
+<div class="container"><center>
     	<div class="row" style="width: 80%;">
-    		<div class="col-sm-12">
-	    		<div class="col-sm-3"><img src="1c.jpg" style="width: 100%;"></div>
-	    		<div class="col-sm-3"><img src="3c.jpg" style="width: 100%;"></div>
-	    		<div class="col-sm-3"><img src="2c.jpg" style="width: 100%;"></div>
-	    		<div class="col-sm-3"><img src="4c.jpg" style="width: 100%;"></div>
+    		<div class="col-md-12">
+	    		<div class="col-md-3"><img src="img/1c.jpg" style="width: 100%;"></div>
+	    		<div class="col-md-3"><img src="img/3c.jpg" style="width: 100%;"></div>
+	    		<div class="col-md-3"><img src="img/2c.jpg" style="width: 100%;"></div>
+	    		<div class="col-md-3"><img src="img/4c.jpg" style="width: 100%;"></div>
 	    	</div>
     	</div></center>
-    </div><br>
-<section class="goods">
-		<div class="container text-center">
-			<div class="row">				
-				<div class="wrap">			
-
-					<div class="panel-group" id="collapse-group">
-						 <div class="panel panel-default">
-							 <div class="panel-heading">
-							 <h4 class="panel-title">
-							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el1"><p style="color: grey;">O'quv markazi faoliyati qonuniy va litsenziya asosida amalga oshiriladi.</p></a>
-							 </h4>
-							 </div>
-							 <div id="el1" class="panel-collapse collapse">
-							 <div class="panel-body">Farzandingiz davlat standartlari asosida tekshirilgan va sinovdan o'tgan yangi metodlar asosida o'qitiladi. Bunda bola zerikmaydi va qiziqadi.</div>
-							 </div>
-						 </div>
-						 
-						 <div class="panel panel-default">
-							 <div class="panel-heading">
-							 <h4 class="panel-title">
-							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el2"><p style="color: grey;">O'quv markazning qulay joyda joylashganligi</p></a>
-							 </h4>
-							 </div>
-							 <div id="el2" class="panel-collapse collapse">
-							 <div class="panel-body">Bu farzandingizni bemalol o'quv markazimizga kelib ketishini ta'minlaydi, ortiqcha yo'l kira harajatlarini kamaytiradi"</div>
-							 </div>
-						 </div>
-						 
-						 <div class="panel panel-default">
-							 <div class="panel-heading">
-							 <h4 class="panel-title">
-							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el3"><p style="color: grey;">O'quv sharoitlari, honalar va mebel-jihozlar mahsus bolalar uchun mo'ljallangan.</p></a>
-							 </h4>
-							 </div>
-							 <div id="el3" class="panel-collapse collapse">
-							 <div class="panel-body">Farzandingiz mazza qilib zerikmasdan, o'ziga mos va qulay holatlarda o'qiydi</div>
-							 </div>
-						 </div>
-						 <div class="panel panel-default">
-							 <div class="panel-heading">
-							 <h4 class="panel-title">
-							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el4"><p style="color: grey;">O'qituvchilar malakali mutahasislar, ularni dars o'tishi doim nazorat ostida.</p></a>
-							 </h4>
-							 </div>
-							 <div id="el4" class="panel-collapse collapse">
-							 <div class="panel-body">Sifatli va qiziqarli o'yinlar asosida dars o'tadi, farzandingizga yaxshi muomalada bo'ladi, qo'pollik qilmaydi.</div>
-							 </div>
-						 </div>	
-						 
-						 <div class="panel panel-default">
-							 <div class="panel-heading">
-							 <h4 class="panel-title">
-							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el5"><p style="color: grey;">Biz nafaqat aqliy balki sog'likni ham o'ylaymiz va sport to'garaklarini tashkil qilganmiz.</p></a>
-							 </h4>
-							 </div>
-							 <div id="el5" class="panel-collapse collapse">
-							 <div class="panel-body">Darsga qo'shimcha sport to'garaklariga qatnashib, jismonan sog'lom bo'ladi qaddi qomati chiroyli bo'ladi, oyoq yassiligi bo'lsa yo'qoladi, tana a'zolari tekkis rivojlanadi.</div>
-							 </div>
-						 </div>	
-
-						 <div class="panel panel-default">
-							 <div class="panel-heading">
-							 <h4 class="panel-title">
-							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el6"><p style="color: grey;">Narhlar qimmat emas(hamyonbop)</p></a>
-							 </h4>
-							 </div>
-							 <div id="el6" class="panel-collapse collapse">
-							 <div class="panel-body">Andijon bo'yicha biznikidek sharoitda, sifatli, natijasi kafolatlangan, yangi metodikalar bilan o'qitadigan o'quv markazi yo'q deb bemalol ayta olamiz. Hohlagan usulda to'lovlarni to'lashingiz mumkin. Biz ota-onalar to'lagan pulni ko'rsatayotgan hizmat bilan bir necha barobar qilib oqlaymiz.</div>
-							 </div>
-						 </div>	
-
-						 <div class="panel panel-default">
-							 <div class="panel-heading">
-							 <h4 class="panel-title">
-							 <a data-toggle="collapse" data-parent="#collapse-group" href="#el7"><p style="color: grey;">O'quv markazimiz hududiga kuzatuv kameralari o'rnatilgan</p></a>
-							 </h4>
-							 </div>
-							 <div id="el7" class="panel-collapse collapse">
-							 <div class="panel-body">Farzandingizni havfsizligini ta'minlash uchun mahsus tashkil qilingan.</div>
-							 </div>
-						 </div>							 
+    </div><br>	-->
+			<section class="popular-course-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Bizdagi Shart Sharoitlar!</h1>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="active-popular-carusel">
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/legal.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
 									
-				</div>
-			</div>
-		</div>
-	</div></section>
-	<hr class="container">
-<div class="container">
-	<h2 class="text-center" style="color: #2e6da4;"><i>O'qish Qanday Boshlanadi</i></h2>
-	<div class="row">
-		<div class="col-sm-6">
-			<h3 class="text-center"><b style="color: #FF1493;">1 qadam<i style="color:#2e6da4 "> O'quv markaziga boriladi</i></b></h3>
-			<h3 class="text-center"><b style="color: #FF1493;">2 qadam<i style="color:#2e6da4 "> Registratsiyadan o'tiladi</i></b></h3>
-			<h3 class="text-center"><b style="color: #FF1493;">3 qadam<i style="color:#2e6da4 "> Guruh to'planishini kutiladi</i></b></h3>
-			<h3 class="text-center"><b style="color: #FF1493;">4 qadam<i style="color:#2e6da4 "> To'lov qilinadi</i></b></h3>
-			<h3 class="text-center"><b style="color: #FF1493;">5 qadam<i style="color:#2e6da4 "> Va nihoyat o'qish boshlanadi</i></b></h3>
-		</div>
-		<div class="col-sm-6">
-			<h2 class="text-center" >YOKI</h2>
-			<h2 class="text-center" style="color: #FF1493"><b><i>1 <a data-toggle="modal" href="#myModal">CLICK</a> bilan yoziling!</i></b></h2>
-			 <center><button type="button" class="btn btn-primary btn-lg" id="myBtn9" >Kursga Yozilish!</button></center>
-				<div class="modal fade" id="myModal9" role="dialog">
-				    <div class="modal-dialog">    
-				      <!-- Modal content-->
-				      <div class="modal-content">
-				        <div class="modal-header">
-				         	<button type="button " class="close" data-dismiss="modal">&times;</button>
-				          	<h4>Kursga Yozilish</h4>
-					        </div>
-					        <div class="modal-body" >
-						        <div class="form__wrapper">
-							      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-							        <p class="form-message"></p>
-							          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-							          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-							          <input name="theme" type="textarea" class="form-input__theme"  placeholder="Yoshingiz">
-							          <input type="submit" class="form-input__button" value="Yuborish">
-							      </form>
+									</div>									
 								</div>
-					        </div>
-				      	</div>
-				    </div>
-				</div> 
-			<h2 class="text-center">Shoshiling joylar cheklangan!!!</h2>
-		</div>
+								<div class="details">
+									
+										<h4>
+											O'quv markazi faoliyati qonuniy va litsenziya asosida amalga oshiriladi.
+										</h4>
+									
+									<p>
+											Farzandingiz davlat standartlari asosida tekshirilgan va sinovdan o'tgan yangi metodlar asosida o'qitiladi. Bunda bola zerikmaydi va qiziqadi.									
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/location.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+										
+									</div>									
+								</div>
+								<div class="details">
+									
+										<h4>
+											O'quv markazning qulay joyda joylashganligi
+										</h4>
+									
+									<p>
+											Bu farzandingizni bemalol o'quv markazimizga kelib ketishini ta'minlaydi, ortiqcha yo'l kira harajatlarini kamaytiradi"									
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/furniture.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+										
+									</div>									
+								</div>
+								<div class="details">
+									
+										<h4>
+											O'quv sharoitlari, honalar va mebel-jihozlar mahsus bolalar uchun mo'ljallangan.
+										</h4>
+									
+									<p>
+											Farzandingiz mazza qilib zerikmasdan, o'ziga mos va qulay holatlarda o'qiydi									
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/education.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+										
+										
+									</div>									
+								</div>
+								<div class="details">
+									
+										<h4>
+											O'qituvchilar malakali mutahasislar, ularni dars o'tishi doim nazorat ostida.
+										</h4>
+									
+									<p>
+											Sifatli va qiziqarli o'yinlar asosida dars o'tadi, farzandingizga yaxshi muomalada bo'ladi, qo'pollik qilmaydi.									
+									</p>
+								</div>
+							</div>
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/sport.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+										
+										
+									</div>									
+								</div>
+								<div class="details">
+									
+										<h4>
+											Biz nafaqat aqliy balki sog'likni ham o'ylaymiz va sport to'garaklarini tashkil qilganmiz.
+										</h4>
+									
+									<p>
+											Darsga qo'shimcha sport to'garaklariga qatnashib, jismonan sog'lom bo'ladi qaddi qomati chiroyli bo'ladi, oyoq yassiligi bo'lsa yo'qoladi, tana a'zolari tekkis rivojlanadi.								
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/price.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+									
+										
+									</div>									
+								</div>
+								<div class="details">
+									
+										<h4>
+											Narhlar qimmat emas(hamyonbop)
+										</h4>
+									
+									<p>
+											Andijon bo'yicha biznikidek sharoitda, sifatli, natijasi kafolatlangan, yangi metodikalar bilan o'qitadigan o'quv markazi yo'q deb bemalol ayta olamiz. Hohlagan usulda to'lovlarni to'lashingiz mumkin. Biz ota-onalar to'lagan pulni ko'rsatayotgan hizmat bilan bir necha barobar qilib oqlaymiz.									
+									</p>
+								</div>
+							</div>	
+							<div class="single-popular-carusel">
+								<div class="thumb-wrap relative">
+									<div class="thumb relative">
+										<div class="overlay overlay-bg"></div>	
+										<img class="img-fluid" src="img/cctv.jpg" alt="">
+									</div>
+									<div class="meta d-flex justify-content-between"><br>
+										
+										
+									</div>									
+								</div>
+								<div class="details">
+									
+										<h4>
+												O'quv markazimiz hududiga kuzatuv kameralari o'rnatilgan
+										</h4>
+									
+									<p>
+											Farzandingizni havfsizligini ta'minlash uchun mahsus tashkil qilingan.									
+									</p>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>	
+			</section>
+<section id="fikr">
+	<div id="demo" class="carousel slide" data-ride="carousel">
+	  <ul class="carousel-indicators">
+	    <li data-target="#demo" data-slide-to="0" class="active"></li>
+	    <li data-target="#demo" data-slide-to="1"></li>
+	    <li data-target="#demo" data-slide-to="2"></li>
+	  </ul>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <div class="col-lg-12"> <img class="d-block img-fluid" src="img/background1.jpg" alt="Los Angeles" width="1100" height="500"></div>  
+	    </div>
+	    <div class="carousel-item">
+	     <div class="col-lg-12"> <img class="d-block img-fluid" src="img/background2.jpg" alt="Chicago" width="1100" height="500"></div>   
+	    </div>
+	    <div class="carousel-item">
+	     <div class="col-lg-12">  <img class="d-block img-fluid" src="img/background3.jpg" alt="New York" width="1100" height="500"></div> 
+	    </div>
+	  </div>
 	</div>
-</div>
-<hr class="container-fluid">
-<div class="container-fluid" id="fikr">
-  <h2 style="text-align: center;">Mijozlarimizni Bildirgan Fikrlari!</h2>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+</section>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="background.jpg" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption">
-        	<div class="col-md-6"><p style="font-size: 1.4vw; color: #000;">"Billi" o'quv markazininig o'qituvchilariga bolaga individual munosabati, qiziqarli saboqlari uchun minnatdorchilik bildiraman. Bolam quvonch bilan maktabga bormoqda. Sinflar bolalar bog'chasidan bolalarga maktabga birinchi marta moslashishga yordam beradi, bu esa yosh bolalar uchun juda muhimdir</p><p style="font-size: 1.5vw; text-align: right;color: #000;">Jasurbek Izzatullayev</p></div>
-          	<div class="col-md-6"><p style="font-size: 1.4vw; color: #000;">Bolam 2016 yil sentyabridan beri "Billi"ga boradi. Shu vaqt ichida u o'qishni, hisoblashni o'rganib, ingliz tilini katta quvonch bilan o'rganmoqchi. Bolam chindan ham o'qishni yaxshi ko'radi, mashg'ulotlar g'ayritabiiy tarzda o'tkaziladi.Barcha o'qituvchilarga juda minnatdormiz!</p><p style="font-size: 1.5vw; text-align: right;color: #000;">Shoxruh Isroilov</p></div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="background3.jpg" alt="Chicago" style="width:100%;">
-        <div class="carousel-caption">
-        	<div class="col-md-6"><p style="font-size: 1.4vw; color: #000;">Har bir ona nimani xohlaydi? Albatta, farzandingizni sog'lom, aqlli va muvaffaqiyatli ko'rishni. Qizimni 5 yoshda buyon "Billi"ga boradi va turmush o'rtog'im bilan uni oldinroq "Billi"ga olib kelmaganimiz uchun afsuslanaman. Diyora juda kamtar va uyatchang qiz, lekin har bir bolaga alohida yondashuv ajoyib natijalarni korsatadi.</p><p style="font-size: 1.5vw; text-align: right;color: #000;">Muhammadjonov Farruh</p></div>
-          	<div class="col-md-6"><p style="font-size: 1.4vw; color: #000;">O'g'limga ta'lim berayotganingiz uchun tashakkur! Bir yil davomida o'glim o'qish va yozish, ijodiy ko'nikmalarni, musiqa va chizishni yaxshi o'zlashtirdi. Ta'limning tezligi va sifatiga, shuningdek, bolalarga qaratilayotgan e'tibordan va g'amxo'rligdan juda mamnunman. Yangi mavsumda sizlarga omad tilayman.</p><p style="font-size: 1.5vw; text-align: right;color: #000;">Hojiakbar Abdullayev</p></div>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="background2.jpg" alt="New York" style="width:100%;">
-        <div class="carousel-caption">
-        	<div class="col-md-6"><p style="font-size: 1.4vw; color: #000;">"Billi" o'quv markazida 2016 yilda kelganmiz. Bundan oldin bu erga katta qizim Malikani olib kelgan edim. O'qituvchilardan juda mamnunman. Og'lim ancha tartibli va mas'uliyatli bo'lib qolgan.O'g'lim yana bir yil davomida chiroyli yozishni o'rganmoqchi. Katta rahmat!</p><p style="font-size: 1.5vw; text-align: right;color: #000;">Malika Nosirova</p></div>
-          	<div class="col-md-6"><p style="font-size: 1.4vw; color: #000;">Men "Billi" o'quv markazi o'qituvchilariga o'z minnatdorchiligimni bildirmoqchiman, farzandlarimizga e'tiboringizni, mehribonligingiz, kasbingingizga mas'uliyat bilan yondoshishingiz va qizimga begrgan bilimlaringiz uchun minnatdorchilik bildiraman. Rahmat sizlarga</p><p style="font-size: 1.5vw; text-align: right;color: #000;">Sayyora Tursunova</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-<!-- Footer-->
 <footer class="panel-footer" id="contact">
-	<div class="container-fluid">
-		<h1 style="text-align:center; color: #FF1493;">O'qishni Hoziroq Boshlang!</h1><br>
-			<div class="col-sm-4" >
-				<center><h3 style="color: #2e6da4;">BILLI №1</h3><h3 style="color: #2e6da4;"> Andijon shahar Boburshox ko'cha 38 uy Mo'ljal: Sarbon to'yhonasi</h3>
-				<h3 style="color: #2e6da4;">+998 91 601 99 88</h3></center>
+	<div class="container-fluid"><br>
+		<h1 style="text-align:center; color: rgba(4,9,30,0.9);">O'qishni Hoziroq Boshlang!</h1><br>
+		<div class="row">
+			<div class="col-sm-3" ><br>
+				<center><h3 ">BILLI №1</h3><h3 style="color: #777;"> Andijon shahar Boburshox ko'cha 38 uy Mo'ljal: Sarbon to'yhonasi</h3>
+				<h3 style="color: #777;">+998 91 601 99 88</h3></center>
 			</div>
-			<div class="col-sm-4">
-				<center><h3 style="color: #2e6da4;">BILLI №2</h3><h3 style="color: #2e6da4;">Andijon shahar Bo'ston dahasi 11-marshrut ohirgi bekati</h3>
-				<h3 style="color: #2e6da4;">+998 93 910 99 88</h3></center>
+			<div class="col-sm-3"><br>
+				<center><h3 ">BILLI №2</h3><h3 style="color: #777;">Andijon shahar Bo'ston dahasi 11-marshrut ohirgi bekati</h3>
+				<h3 style="color: #777;">+998 93 910 99 88</h3></center>
 			</div>
-			<div class="col-sm-4">
-				<center><h3 style="color: #2e6da4;">BILLI №3</h3><h3 style="color: #2e6da4;">Andijon shahar 1-kichik daha Mo'ljal: 32-pochta bo'limi 41-bolalar bog'chasi oldida</h3></center>
-
-			</div>						
-<!--			<div class="form__wrapper">
-			      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-			      	<p class="form-title">Закажите обратный звонок и наш консультант свяжется с вами</p>
+			<div class="col-sm-3"><br>
+				<center><h3 ">BILLI №3</h3><h3 style="color: #777;">Andijon shahar 1-kichik daha Mo'ljal: 32-pochta bo'limi 41-bolalar bog'chasi oldida</h3></center>
+			</div>									
+	<div class="col-sm-3">
+			<div class="form__wrapper">
+			      <form id="form-contact" method="POST" class="form-element" autocomplete="off" action="send-message-to-telegram.php">
+			        <p class="form-title">Biz Siz Bilan Tez Orada Bog'lanamiz</p>
 			        <p class="form-message"></p>
 			          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-			          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-			          <input name="theme" type="hidden" class="form-input__theme"  placeholder="Yoshingiz">
+			          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" value="998 " required>
+			          <input name="theme" type="hidden" class="form-input__theme"  value="Заявка с сайта">
+			          <label></label>
 			          <input type="submit" class="form-input__button" value="Yuborish">
 			      </form>
+			    </div>
 			</div>
-		</div>-->
-<div class="container">
-	<div class="col-sm-6">
-<div id="googleMap" style="width:90%;height:400px; background-color: yellow;"></div>
-</div>
-	<div class="col-sm-6">
-		<div class="form__wrapper">
-		      <form id="form-contact" method="POST" class="form-element" autocomplete="off">
-		        <p class="form-title">Ma'lumotlarni To'ldiring va Biz Tez Orada Siz Bilan Bog'lanamiz</p>
-		        <p class="form-message"></p>
-		          <input name="name" type="text" class="form-input__name" tabindex="0" placeholder="Ismingizni Kiriting" required>
-		          <input name="phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Telfon Raqamingizni Kiriting" required>
-		          <input name="theme" type="hidden" class="form-input__theme"  value="Заявка с сайта">
-		          <input type="submit" class="form-input__button" value="Yuborish">
-		      </form>
-		    </div>
-		</div>
 	</div>
-</div>
-	
-<div class="wrapper row5">
+	<div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
     <!-- so'ngi qismi -->
-    <p class="fl_left">&copy; 2018 - <a href="https://www.t.me/Iskandari777"><img src="telegram.png" width="25px" height="25px"> Iskandarbek</a></p>
+    <p class="fl_left">&copy; 2018 - <a href="https://www.t.me/Iskandari777"><span class="fa fa-telegram"></span> Iskandarbek</a></p>
   </div>
 </div>
 </div>
+</div>
+	
+
 </footer>
-<!-- Footer tugatilishi-->
-<script>
-	$(document).ready(function(){
-	  // Add smooth scrolling to all links in navbar + footer link
-	  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-	    // Make sure this.hash has a value before overriding default behavior
-	    if (this.hash !== "") {
-	      // Prevent default anchor click behavior
-	      event.preventDefault();
 
-	      // Store hash
-	      var hash = this.hash;
 
-	      // Using jQuery's animate() method to add smooth page scroll
-	      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-	      $('html, body').animate({
-	        scrollTop: $(hash).offset().top
-	      }, 900, function(){
-	   
-	        // Add hash (#) to URL when done scrolling (default click behavior)
-	        window.location.hash = hash;
-	      });
-	    } // End if
-	  });
-	  
-	  $(window).scroll(function() {
-	    $(".slideanim").each(function(){
-	      var pos = $(this).offset().top;
 
-	      var winTop = $(window).scrollTop();
-	        if (pos < winTop + 600) {
-	          $(this).addClass("slide");
-	        }
-	    });
-	  });
-	})
-</script>
-	<script>
-$(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModal").modal();
-    });
-});
-</script>
-</script>
-<script>
-$(document).ready(function(){
-    $("#myBtnb").click(function(){
-        $("#myModalb").modal();
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#myBtn9").click(function(){
-        $("#myModal9").modal();
-    });
-});
-</script>
+			<!-- End banner Area -->
 
-<script>
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
+	
+			<!-- End footer Area -->	
 
-<script src="https://maps.google.com/maps?q=40.782386,72.332032&ll=40.782386,72.332032&z=16"></script>
-<!--
-																				
-</body>
-</html>
+			<script src="sendToTelegram/telegramform/js/telegramform.js"></script>
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+    		<script src="js/jquery.tabs.min.js"></script>						
+			<script src="js/jquery.nice-select.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
