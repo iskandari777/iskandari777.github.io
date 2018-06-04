@@ -20,8 +20,8 @@ if (isset($_POST['theme'])) {
   $themeFieldset = "Тема: ";
   }
 }
-$token = "341996777:AAHbnuvQib-vHU47i-6hbUrCU9D-qHYekxc";
-$chat_id = "-209253141";
+$token = "386022962:AAEB3ks2fSrExTDhde6ZPtKLo-ZFx3B6Gnw";
+$chat_id = "-305991601";
 $arr = array(
   $nameFieldset => $name,
   $phoneFieldset => $phone,
