@@ -5,13 +5,11 @@
 
 $name=$_POST['user_name'];
 $phone=$_POST['user_phone'];
-$email=$_POST['user_email'] ;
 $token="386022962:AAEB3ks2fSrExTDhde6ZPtKLo-ZFx3B6Gnw";
 $chat_id = "-305991601";
 $arr=array(
 'Ismi:'=>$name,
 'Telefon:'=>$phone,
-'Email:'=>$email
 );
 
 foreach ($arr as $key => $value) {
@@ -27,3 +25,4 @@ else{
 }
 
 ?>
+
